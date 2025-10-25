@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #00ffff55;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#task {
+  width: 300px;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0 15px;
+  font-size: 1rem;
+  background: #1a1a1a;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#task:focus {
+  box-shadow: 0 0 10px #00ffff;
+}
+
+form > button {
+  background: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form > button:hover {
+  background: #00cccc;
+  transform: scale(1.05);
+}
+
+
+
+
+#allTask {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Each Task Card */
+#allTask > div {
+  background: #1a1a1a;
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 8px #000;
+  transition: 0.3s;
+}
+
+#allTask > div:hover {
+  background: #222;
+  transform: translateY(-2px);
+}
+
+#allTask span {
+  font-size: 1.1rem;
+  word-break: break-word;
+  flex: 1;
+}
+
+/* Buttons Wrapper */
+#allTask div button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 8px 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+/* Done Button */
+#allTask div button:nth-of-type(1) {
+  background: linear-gradient(135deg, #00ff88, #00ffaa);
+  color: #000;
+  box-shadow: 0 0 10px #00ffaa55;
+}
+
+#allTask div button:nth-of-type(1):hover {
+  background: linear-gradient(135deg, #00ffaa, #00ffcc);
+  box-shadow: 0 0 15px #0f101055;
+  transform: scale(1.05);
+}
+
+/* Delete Button */
+#allTask div button:nth-of-type(2) {
+  background: linear-gradient(135deg, #ff0055, #ff3366);
+  color: #fff;
+  box-shadow: 0 0 10px #1f121555;
+}
+
+#allTask div button:nth-of-type(2):hover {
+  background: linear-gradient(135deg, #ff3366, #ff6699);
+  box-shadow: 0 0 15px #332d2faa;
+  transform: scale(1.05);
+}
+
